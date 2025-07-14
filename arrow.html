@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .btn {
+            display: inline-block;
+            padding: 0 20px 0px 0;
+            color: #a7dff0;
+            text-decoration: none;
+            position: relative;
+            border-bottom: 2px solid #a7dff0;
+            margin-top: -5px;
+        }
+       
+        .btn::after{
+            content: '';
+            display: block;
+
+            position: absolute;
+            bottom: 3px;
+            right: 0;
+
+            transform: rotate(45deg);
+            width: 10px;
+            height: 2px;
+            background-color: #a7dff0;
+            transition: width 0.3s ease;
+        }
+        </style>
+</head>
+<body>
+    <p>
+        <a class="btn" href="#"><b>View More</b></a> 
+
+    </p>
+</body>
+</html>
